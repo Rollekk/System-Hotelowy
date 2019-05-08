@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="398.0" prefWidth="684.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.Client.SystemHotelowy.SystemHotelowy">
+   <children>
+      <ImageView fitHeight="428.0" fitWidth="695.0" layoutX="-11.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/recepcja.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.14" saturation="0.02" />
+         </effect>
+      </ImageView>
+      <AnchorPane prefHeight="60.0" prefWidth="683.0" style="-fx-background-color: #3d3d3d;">
+         <children>
+            <Label layoutX="193.0" layoutY="-14.0" prefHeight="75.0" prefWidth="298.0" text="Panel pracownika">
+               <font>
+                  <Font name="Ederson PERSONAL USE ONLY" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.09444444444444444" centerY="0.8095238095238096" cycleMethod="REFLECT" radius="0.5">
+                     <stops>
+                        <Stop color="#00000013" />
+                        <Stop color="#00000013" offset="0.007662835249042145" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="96.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/Hotel.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="96.0" layoutX="588.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/Hotel.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="85.0" fitWidth="122.0" layoutX="278.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/rezerwacja.jpg" />
+         </image>
+         <effect>
+            <InnerShadow height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="278.0" layoutY="170.0" mnemonicParsing="false" onAction="#nowaClicked" prefHeight="85.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px 2px 2px 2px 2px;" text="Aktualne" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <ImageView fitHeight="85.0" fitWidth="122.0" layoutX="480.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/2612013%20アークホテル東京池袋%20ロビー.png" />
+         </image>
+         <effect>
+            <InnerShadow height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="169.0" mnemonicParsing="false" onAction="#powrotClicked" prefHeight="85.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px 2px 2px 2px 2px;" text="Wyloguj" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <ImageView fitHeight="85.0" fitWidth="122.0" layoutX="80.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/background2%20-%20Kopia.jpg" />
+         </image>
+         <effect>
+            <InnerShadow height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </ImageView>
+      <Button layoutX="80.0" layoutY="170.0" mnemonicParsing="false" onAction="#wolneClicked" prefHeight="85.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px 2px 2px 2px 2px;" text="Wolne" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="85.0" fitWidth="122.0" layoutX="80.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/Zajety.jpg" />
+         </image>
+         <effect>
+            <InnerShadow height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </ImageView>
+      <Button layoutX="80.0" layoutY="265.0" mnemonicParsing="false" onAction="#zarezerwowaneClicked" prefHeight="85.0" prefWidth="122.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 2px 2px 2px 2px 2px;" text="Zajete" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <AnchorPane layoutX="-166.0" layoutY="97.0" prefHeight="39.0" prefWidth="850.0" style="-fx-background-color: #3d3d3d;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="82.0" prefHeight="61.0" prefWidth="96.0" text="Pokoje">
+         <font>
+            <Font name="Ederson PERSONAL USE ONLY" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.0888888888888889" centerY="0.7285714285714286" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop color="#0000000d" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="274.0" layoutY="88.0" text="Rezerwacje">
+         <font>
+            <Font name="Ederson PERSONAL USE ONLY" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.8999999999999999" centerY="0.8142857142857144" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop color="#00000007" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="478.0" layoutY="88.0" text="Uzytkownik">
+         <font>
+            <Font name="Ederson PERSONAL USE ONLY" size="24.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.8666666666666666" centerY="0.8428571428571429" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop color="#00000020" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

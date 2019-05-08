@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="564.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="System.Client.Logowanie.LogowanieController">
+   <children>
+      <ImageView fitHeight="389.0" fitWidth="690.0" layoutX="-125.0" layoutY="-4.0" onMouseDragged="#dragged" onMousePressed="#pressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/background2.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="304.0" layoutY="35.0" opacity="0.98" prefHeight="323.0" prefWidth="230.0" style="-fx-background-color: #333333;">
+         <children>
+            <TextField fx:id="id" alignment="CENTER" layoutX="29.0" layoutY="120.0" prefHeight="25.0" prefWidth="172.0" promptText="Login" style="-fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-background-color: transparent; -fx-text-fill: white;">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <PasswordField fx:id="haslo" alignment="CENTER" layoutX="29.0" layoutY="162.0" prefHeight="25.0" prefWidth="172.0" promptText="Haslo" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white; -fx-text-fill: white;">
+               <effect>
+                  <DropShadow />
+               </effect></PasswordField>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="230.0" mnemonicParsing="false" onAction="#logowanieClicked" prefHeight="25.0" prefWidth="172.0" style="-fx-text-fill: white; -fx-background-color: transparent;" text="Zaloguj" textAlignment="CENTER" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="22.0" prefHeight="77.0" prefWidth="192.0" text="Logowanie">
+               <font>
+                  <Font name="Ederson PERSONAL USE ONLY" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.26666666666666666" centerY="0.7333333333333333" cycleMethod="REFLECT" radius="0.5">
+                     <stops>
+                        <Stop color="#8f8f8fc4" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="77.0" fitWidth="123.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/Hotel.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button layoutX="529.0" layoutY="-8.0" mnemonicParsing="false" onAction="#xClicked" prefHeight="41.0" prefWidth="44.0" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
